@@ -11,16 +11,11 @@ import IGListKit
 
 class UserViewSectionController: IGListSectionController, IGListSectionType, IGListWorkingRangeDelegate {
 
-    var height: Int?
+    var user: User?
     var downloadImage: UIImage?
     var task: URLSessionDataTask?
     
-    var urlString: String? {
-        guard let _ = height, let _ = collectionContext?.containerSize.width else {
-            return nil
-        }
-        return "https://s3.burpple.com/foods/28311768151bc0ed1d81459700_original.?1477472931"
-    }
+    var urlString: String?
     
     deinit {
         task?.cancel()
@@ -36,26 +31,23 @@ class UserViewSectionController: IGListSectionController, IGListSectionType, IGL
     }
     
     func sizeForItem(at index: Int) -> CGSize {
-        //        guard let containerSize = collectionContext?.containerSize else {
-        return CGSize(width: 414, height: 414)
-        //        }
-        //        return containerSize
-        //        let width: CGFloat = collectionContext?.containerSize.width ?? 0
-        //        let height: CGFloat = CGFloat(index == 0 ? 55 : (self.height ?? 0))
-        //        return CGSize(width: width, height: height)
-        
+        return CGSize(width: 414, height: 42)
     }
     
     func cellForItem(at index: Int) -> UICollectionViewCell {
         let cell = collectionContext!.dequeueReusableCell(of: UserCell.self, for: self, at: index)
         if let cell = cell as? UserCell {
             cell.setImage(image: downloadImage)
+            cell.setName(name: user?.name)
         }
         return cell
     }
     
     func didUpdate(to object: Any) {
-        self.height = object as? Int
+        if let user = object as? User {
+            self.user = user
+            self.urlString = user.profilePicURL
+        }
     }
     
     func didSelectItem(at index: Int) {
@@ -80,7 +72,7 @@ class UserViewSectionController: IGListSectionController, IGListSectionType, IGL
             }
             DispatchQueue.main.async {
                 self.downloadImage = image
-                if let cell = self.collectionContext?.cellForItem(at: 0, sectionController: self) as? ImageCell {
+                if let cell = self.collectionContext?.cellForItem(at: 0, sectionController: self) as? UserCell {
                     cell.setImage(image: image)
                 }
             }

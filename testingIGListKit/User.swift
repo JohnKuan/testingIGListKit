@@ -25,7 +25,7 @@ class User: IGListDiffable {
         self.pk = pk
         self.name = name
         self.profilePicURL = profilePicURL
-        self.date = (date as NSDate).formattedAsTimeAgo()
+        self.date = NSDate()
     }
 
     //MARK: IGListDiffable

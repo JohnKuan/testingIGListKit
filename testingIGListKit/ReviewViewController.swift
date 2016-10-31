@@ -25,7 +25,8 @@ class ReviewViewController: UIViewController, IGListAdapterDataSource {
     var data = [
         410,
         LabelViewModel(pk: 1, text: "Super Nice Food"),
-        TextViewModel(pk: 2, text: "Ligula Ipsum Tristique Parturient Euismod iweout mulaso tihfawe porwee teywem cgjkta lamdba")
+        TextViewModel(pk: 2, text: "Ligula Ipsum Tristique Parturient Euismod iweout mulaso tihfawe porwee teywem cgjkta lamdba"),
+        User(pk: 3, name: "Boy 1", profilePicURL: "https://s3.burpple.com/users/70810898d979fc06118625_small.?1391672238", date: "")
     ] as [Any]
 
     override func viewDidLoad() {
@@ -61,6 +62,8 @@ class ReviewViewController: UIViewController, IGListAdapterDataSource {
             return TextViewSectionController()
         case is LabelViewModel:
             return LabelSectionController()
+        case is User:
+            return UserViewSectionController()
         default:
             return LabelSectionController()
         }
