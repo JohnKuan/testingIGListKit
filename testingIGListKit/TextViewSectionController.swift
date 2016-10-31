@@ -1,17 +1,17 @@
 //
-//  LabelSectionController.swift
+//  TextViewSectionController.swift
 //  testingIGListKit
 //
-//  Created by John Kuan on 23/10/16.
+//  Created by John Kuan on 31/10/16.
 //  Copyright © 2016 Burpple. All rights reserved.
 //
 
 import UIKit
 import IGListKit
 
-class LabelSectionController: IGListSectionController, IGListSectionType {
+class TextViewSectionController: IGListSectionController, IGListSectionType {
     
-    var object: LabelViewModel?
+    var object: TextViewModel?
     
     override init() {
         super.init()
@@ -24,17 +24,17 @@ class LabelSectionController: IGListSectionController, IGListSectionType {
     }
     
     func sizeForItem(at index: Int) -> CGSize {
-        return CGSize(width: collectionContext!.containerSize.width, height: 25)
+        return CGSize(width: collectionContext!.containerSize.width, height: 55)
     }
     
     func cellForItem(at index: Int) -> UICollectionViewCell {
-        let cell = collectionContext!.dequeueReusableCell(of: LabelCell.self, for: self, at: index) as! LabelCell
-        cell.label.text = object?.text
+        let cell = collectionContext!.dequeueReusableCell(of: TextViewCell.self, for: self, at: index) as! TextViewCell
+        cell.textView.text = object?.text
         return cell
     }
     
     func didUpdate(to object: Any) {
-        self.object = object as? LabelViewModel
+        self.object = object as? TextViewModel
     }
     
     func didSelectItem(at index: Int) {}

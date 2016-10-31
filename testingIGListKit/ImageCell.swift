@@ -39,6 +39,7 @@ class ImageCell: UICollectionViewCell {
         let bounds = contentView.bounds
         activityView.center = CGPoint(x: bounds.width/2.0, y: bounds.height/2.0)
         imageView.frame = bounds
+        
     }
     
     func setImage(image: UIImage?) {

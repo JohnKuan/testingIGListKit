@@ -35,7 +35,9 @@ class LabelCell: UICollectionViewCell {
         let label = UILabel()
         label.backgroundColor = .clear
         label.numberOfLines = 1
-        label.font = LabelCell.font
+        label.font = UIFont(name: "Avenir-Heavy", size: 14.0)
+        label.lineBreakMode = .byTruncatingTail
+        label.translatesAutoresizingMaskIntoConstraints = false
         self.contentView.addSubview(label)
         return label
     }()
@@ -49,11 +51,26 @@ class LabelCell: UICollectionViewCell {
 
     override func layoutSubviews() {
         super.layoutSubviews()
-        let bounds = contentView.bounds
-        label.frame = UIEdgeInsetsInsetRect(bounds, LabelCell.insets)
-        let height: CGFloat = 0.5
-        let left = LabelCell.insets.left
-        separator.frame = CGRect(x: left, y: bounds.height - height, width: bounds.width - left, height: height)
+        
+        var viewDic = Dictionary<String, UILabel>()
+        viewDic["title"] = label
+        
+        let metric = [
+            "padding":10,
+            "paddingsmall":5
+        ]
+        
+        let labelHorizontalConstraint = NSLayoutConstraint.constraints(withVisualFormat: "H:|-padding-[title]-padding-|", options: [], metrics: metric, views: viewDic)
+        let labelVerticalConstraint = NSLayoutConstraint.constraints(withVisualFormat: "V:|-paddingsmall-[title]-|", options: [], metrics: metric, views: viewDic)
+//        let heightConstraint = NSLayoutConstraint(item: label, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .height, multiplier: 1.0, constant: 21)
+//        self.contentView.addConstraint(heightConstraint)
+        self.contentView.addConstraints(labelVerticalConstraint)
+        self.contentView.addConstraints(labelHorizontalConstraint)
+//        let bounds = contentView.bounds
+//        label.frame = UIEdgeInsetsInsetRect(bounds, LabelCell.insets)
+//        let height: CGFloat = 0.5
+//        let left = LabelCell.insets.left
+//        separator.frame = CGRect(x: left, y: bounds.height - height, width: bounds.width - left, height: height)
     }
 
     override var isHighlighted: Bool {

@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7D1B1089AEFB3D73EBC7BBC50CEA2858"
-               BuildableName = "Pods_testingIGListKit.framework"
-               BlueprintName = "Pods-testingIGListKit"
+               BlueprintIdentifier = "D205B1E7ED80B441B7782917245BE15B"
+               BuildableName = "NSDate_Time_Ago.framework"
+               BlueprintName = "NSDate-Time-Ago"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7D1B1089AEFB3D73EBC7BBC50CEA2858"
-            BuildableName = "Pods_testingIGListKit.framework"
-            BlueprintName = "Pods-testingIGListKit"
+            BlueprintIdentifier = "D205B1E7ED80B441B7782917245BE15B"
+            BuildableName = "NSDate_Time_Ago.framework"
+            BlueprintName = "NSDate-Time-Ago"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

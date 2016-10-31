@@ -7,5 +7,7 @@ target 'testingIGListKit' do
 
   # Pods for testingIGListKit
   pod ‘IGListKit’
-
+  # Time ago for showing humman readable since timestamp
+  pod 'NSDate-Time-Ago', :git => 'https://github.com/burpple/NSDate-Time-Ago.git'
+  
 end

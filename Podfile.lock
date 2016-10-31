@@ -1,12 +1,24 @@
 PODS:
   - IGListKit (1.0.0)
+  - NSDate-Time-Ago (1.0.1)
 
 DEPENDENCIES:
   - IGListKit
+  - NSDate-Time-Ago (from `https://github.com/burpple/NSDate-Time-Ago.git`)
+
+EXTERNAL SOURCES:
+  NSDate-Time-Ago:
+    :git: https://github.com/burpple/NSDate-Time-Ago.git
+
+CHECKOUT OPTIONS:
+  NSDate-Time-Ago:
+    :commit: 050d84d6e64b99aae64234d65d0bf795f9ab70c4
+    :git: https://github.com/burpple/NSDate-Time-Ago.git
 
 SPEC CHECKSUMS:
   IGListKit: 3242c475fa77e2abf2d4de319703088008fbe9b9
+  NSDate-Time-Ago: e475d11bb2121b10ef69881b805d7571513736f8
 
-PODFILE CHECKSUM: 9dafc5adaff4728dcf67732eeb047a1a4df234a6
+PODFILE CHECKSUM: 3a75147f21cf1ba56471157d38d0a272bea516a3
 
 COCOAPODS: 1.0.1

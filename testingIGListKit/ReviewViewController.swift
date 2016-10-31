@@ -21,10 +21,11 @@ class ReviewViewController: UIViewController, IGListAdapterDataSource {
         return IGListCollectionView(frame: .zero, collectionViewLayout: flow)
     }()
     
+
     var data = [
         410,
-        "Ridiculus Elit Tellus Purus Aenean",
-        "Ligula Ipsum Tristique Parturient Euismod"
+        LabelViewModel(pk: 1, text: "Super Nice Food"),
+        TextViewModel(pk: 2, text: "Ligula Ipsum Tristique Parturient Euismod iweout mulaso tihfawe porwee teywem cgjkta lamdba")
     ] as [Any]
 
     override func viewDidLoad() {
@@ -56,6 +57,10 @@ class ReviewViewController: UIViewController, IGListAdapterDataSource {
             return LabelSectionController()
         case is Int:
             return MainImageSectionController()
+        case is TextViewModel:
+            return TextViewSectionController()
+        case is LabelViewModel:
+            return LabelSectionController()
         default:
             return LabelSectionController()
         }

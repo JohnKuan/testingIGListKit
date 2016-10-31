@@ -18,12 +18,14 @@ class User: IGListDiffable {
 
     let pk: Int
     let name: String
-    let handle: String
+    let profilePicURL: String
+    let date: NSDate
 
-    init(pk: Int, name: String, handle: String) {
+    init(pk: Int, name: String, profilePicURL: String, date: String) {
         self.pk = pk
         self.name = name
-        self.handle = handle
+        self.profilePicURL = profilePicURL
+        self.date = (date as NSDate).formattedAsTimeAgo()
     }
 
     //MARK: IGListDiffable
@@ -37,7 +39,7 @@ class User: IGListDiffable {
             return true
         }
         if let object = object as? User {
-            return name == object.name && handle == object.handle
+            return name == object.name && profilePicURL == object.profilePicURL
         }
         return false
     }
