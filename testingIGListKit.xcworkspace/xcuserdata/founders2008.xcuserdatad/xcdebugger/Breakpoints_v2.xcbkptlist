@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "testingIGListKit/MainImageSectionController.swift"
+            timestampString = "499576450.070089"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
+            landmarkName = "listAdapter(_:sectionControllerWillEnterWorkingRange:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "testingIGListKit/MainImageSectionController.swift"
+            timestampString = "499576450.070089"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
+            landmarkName = "listAdapter(_:sectionControllerWillEnterWorkingRange:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "testingIGListKit.MainImageSectionController.(listAdapter (__ObjC.IGListAdapter, sectionControllerWillEnterWorkingRange : __ObjC.IGListSectionController) -&gt; ()).(closure #1).(closure #1)"
+                  moduleName = "testingIGListKit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/founders2008/Desktop/Personal/testingIGListKit/testingIGListKit/MainImageSectionController.swift"
+                  timestampString = "499575197.308602"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "84">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "testingIGListKit.MainImageSectionController.(listAdapter (__ObjC.IGListAdapter, sectionControllerWillEnterWorkingRange : __ObjC.IGListSectionController) -&gt; ()).(closure #1).(closure #1)"
+                  moduleName = "testingIGListKit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/founders2008/Desktop/Personal/testingIGListKit/testingIGListKit/MainImageSectionController.swift"
+                  timestampString = "499575197.311015"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "388">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "testingIGListKit/MainImageSectionController.swift"
+            timestampString = "499576450.070089"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "cellForItem(at:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
