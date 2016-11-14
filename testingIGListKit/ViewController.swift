@@ -16,9 +16,9 @@ class ViewController: UIViewController, IGListAdapterDataSource {
     }()
     let collectionView = IGListCollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
     let demos: [DemoItem] = [
-        DemoItem(name: "Burpple", controllerClass: ReviewViewController.self)
+        DemoItem(name: "Burpple", controllerClass: ReviewViewController.self),
+        DemoItem(name: "Quick Selection", controllerClass: ViewController.self)
     ]
-    
     
 //    let data = [
 //        "Ridiculus Elit Tellus Purus Aenean",
@@ -49,13 +49,10 @@ class ViewController: UIViewController, IGListAdapterDataSource {
     }
     
     func listAdapter(_ listAdapter: IGListAdapter, sectionControllerFor object: Any) -> IGListSectionController {
-//        if object is String {
-//            return LabelSectionController()
-//        }
-//        if object is Int {
-//            return MainImageSectionController()
-//        }
-//        return LabelSectionController()
+        let obj = object as! DemoItem
+        if obj.name == "Quick Selection" {
+            return QSHorizontalSectionController()
+        }
         return SectionController()
     }
     

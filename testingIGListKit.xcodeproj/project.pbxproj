@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		471D89881DD8506200CE007A /* QuickSelectionTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471D89871DD8506200CE007A /* QuickSelectionTab.swift */; };
+		471D898A1DD8523800CE007A /* QuickSelectionTabCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471D89891DD8523800CE007A /* QuickSelectionTabCell.swift */; };
+		471D898C1DD868FE00CE007A /* QSTabSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471D898B1DD868FE00CE007A /* QSTabSectionController.swift */; };
+		471D898E1DD86C4100CE007A /* EmbeddedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471D898D1DD86C4100CE007A /* EmbeddedCollectionViewCell.swift */; };
+		471D89901DD86C6B00CE007A /* QSHorizontalSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471D898F1DD86C6B00CE007A /* QSHorizontalSectionController.swift */; };
 		471FEB2C1DC6FB0C002B1E61 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471FEB2B1DC6FB0C002B1E61 /* ReviewViewController.swift */; };
 		471FEB2E1DC70968002B1E61 /* SectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471FEB2D1DC70968002B1E61 /* SectionController.swift */; };
 		471FEB311DC717F7002B1E61 /* MyFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471FEB301DC717F7002B1E61 /* MyFlowLayout.swift */; };
@@ -32,6 +37,11 @@
 /* Begin PBXFileReference section */
 		0E088378212DE40174E4F0FF /* Pods_testingIGListKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testingIGListKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CA833E6019E61FD96A394A0 /* Pods-testingIGListKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testingIGListKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-testingIGListKit/Pods-testingIGListKit.release.xcconfig"; sourceTree = "<group>"; };
+		471D89871DD8506200CE007A /* QuickSelectionTab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickSelectionTab.swift; sourceTree = "<group>"; };
+		471D89891DD8523800CE007A /* QuickSelectionTabCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickSelectionTabCell.swift; sourceTree = "<group>"; };
+		471D898B1DD868FE00CE007A /* QSTabSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QSTabSectionController.swift; sourceTree = "<group>"; };
+		471D898D1DD86C4100CE007A /* EmbeddedCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmbeddedCollectionViewCell.swift; sourceTree = "<group>"; };
+		471D898F1DD86C6B00CE007A /* QSHorizontalSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QSHorizontalSectionController.swift; sourceTree = "<group>"; };
 		471FEB2B1DC6FB0C002B1E61 /* ReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
 		471FEB2D1DC70968002B1E61 /* SectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionController.swift; sourceTree = "<group>"; };
 		471FEB301DC717F7002B1E61 /* MyFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyFlowLayout.swift; sourceTree = "<group>"; };
@@ -83,6 +93,7 @@
 				47E45AF21DC4A44500B4A881 /* User.swift */,
 				471FEB381DC773B1002B1E61 /* TextViewModel.swift */,
 				471FEB3A1DC779C3002B1E61 /* LabelViewModel.swift */,
+				471D89871DD8506200CE007A /* QuickSelectionTab.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -130,6 +141,8 @@
 				474E1E021DBCF2030075AF8C /* LabelSectionController.swift */,
 				471FEB2D1DC70968002B1E61 /* SectionController.swift */,
 				471FEB3E1DC784F2002B1E61 /* UserViewSectionController.swift */,
+				471D898B1DD868FE00CE007A /* QSTabSectionController.swift */,
+				471D898F1DD86C6B00CE007A /* QSHorizontalSectionController.swift */,
 			);
 			name = SectionControllers;
 			sourceTree = "<group>";
@@ -137,10 +150,12 @@
 		47C608261DC4EB1600BDBA06 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				471D898D1DD86C4100CE007A /* EmbeddedCollectionViewCell.swift */,
 				47C608271DC4EB4100BDBA06 /* ImageCell.swift */,
 				47E45AF41DC4A58100B4A881 /* LabelCell.swift */,
 				471FEB321DC74474002B1E61 /* TextViewCell.swift */,
 				471FEB3C1DC7843B002B1E61 /* UserCell.swift */,
+				471D89891DD8523800CE007A /* QuickSelectionTabCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -192,7 +207,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = Burpple;
 				TargetAttributes = {
 					474E1DFC1DBCF2030075AF8C = {
@@ -288,17 +303,22 @@
 			files = (
 				471FEB331DC74474002B1E61 /* TextViewCell.swift in Sources */,
 				47C608251DC4E87E00BDBA06 /* MainImageSectionController.swift in Sources */,
+				471D898A1DD8523800CE007A /* QuickSelectionTabCell.swift in Sources */,
 				47C608281DC4EB4100BDBA06 /* ImageCell.swift in Sources */,
 				471FEB351DC74F1F002B1E61 /* TextViewSectionController.swift in Sources */,
+				471D898C1DD868FE00CE007A /* QSTabSectionController.swift in Sources */,
 				47E45AF31DC4A44500B4A881 /* User.swift in Sources */,
 				47E45AF11DC49DB200B4A881 /* ViewController.swift in Sources */,
 				474E1E031DBCF2030075AF8C /* LabelSectionController.swift in Sources */,
 				471FEB391DC773B1002B1E61 /* TextViewModel.swift in Sources */,
 				471FEB3D1DC7843B002B1E61 /* UserCell.swift in Sources */,
 				471FEB311DC717F7002B1E61 /* MyFlowLayout.swift in Sources */,
+				471D89901DD86C6B00CE007A /* QSHorizontalSectionController.swift in Sources */,
+				471D89881DD8506200CE007A /* QuickSelectionTab.swift in Sources */,
 				471FEB2E1DC70968002B1E61 /* SectionController.swift in Sources */,
 				47E45AF51DC4A58100B4A881 /* LabelCell.swift in Sources */,
 				471FEB3B1DC779C3002B1E61 /* LabelViewModel.swift in Sources */,
+				471D898E1DD86C4100CE007A /* EmbeddedCollectionViewCell.swift in Sources */,
 				471FEB3F1DC784F2002B1E61 /* UserViewSectionController.swift in Sources */,
 				474E1E011DBCF2030075AF8C /* AppDelegate.swift in Sources */,
 				471FEB2C1DC6FB0C002B1E61 /* ReviewViewController.swift in Sources */,
