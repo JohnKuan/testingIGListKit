@@ -15,7 +15,7 @@ class QSHorizontalSectionController: IGListSectionController, IGListSectionType,
     
     var items = [
         QuickSelectionTab(pk: 0, title: "Reservation", iconName: "reserve", imageName: "reservation_image"),
-        QuickSelectionTab(pk: 1, title: "Nearby Places", iconName: "nearby", imageName: "nearby_image"),
+        QuickSelectionTab(pk: 1, title: "Nearby Places", iconName: "icon_inactive_pin", imageName: "nearby_image"),
         QuickSelectionTab(pk: 2, title: "Delivery", iconName: "delivery", imageName: "delivery_image")
         ]
     
@@ -38,7 +38,6 @@ class QSHorizontalSectionController: IGListSectionController, IGListSectionType,
     func cellForItem(at index: Int) -> UICollectionViewCell {
         let cell = collectionContext!.dequeueReusableCell(of: EmbeddedCollectionViewCell.self, for: self, at: index) as! EmbeddedCollectionViewCell
         adapter.collectionView = cell.collectionView
-        cell.backgroundColor = UIColor.gray
         return cell
     }
     

@@ -25,7 +25,7 @@ class QuickSelectionTabCell: UICollectionViewCell {
     
     fileprivate let iconView: UIImageView = {
         let view = UIImageView()
-        view.contentMode = .scaleAspectFill
+        view.contentMode = .scaleAspectFit
         view.clipsToBounds = true
         view.translatesAutoresizingMaskIntoConstraints = false
         view.addConstraint(NSLayoutConstraint(item: view, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 20))
@@ -45,10 +45,10 @@ class QuickSelectionTabCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.backgroundColor = UIColor.white
+        self.backgroundColor = UIColor.lightGray
 //        contentView.addSubview(imageView)
         contentView.addSubview(titleLabel)
-//        contentView.addSubview(iconView)
+        contentView.addSubview(iconView)
         contentView.translatesAutoresizingMaskIntoConstraints = false
     }
     
@@ -75,6 +75,8 @@ class QuickSelectionTabCell: UICollectionViewCell {
         self.addConstraint(NSLayoutConstraint.init(item: self, attribute: .trailingMargin, relatedBy: .equal, toItem: titleLabel, attribute: .trailingMargin, multiplier: 1.0, constant: 10))
         self.addConstraint(NSLayoutConstraint.init(item: titleLabel, attribute: .bottomMargin, relatedBy: .equal, toItem: self, attribute: .bottomMargin, multiplier: 1.0, constant: 0))
         
+        self.addConstraint(NSLayoutConstraint.init(item: iconView, attribute: .topMargin, relatedBy: .equal, toItem: self, attribute: .topMargin, multiplier: 1.0, constant: 5))
+        self.addConstraint(NSLayoutConstraint.init(item: iconView, attribute: .leadingMargin, relatedBy: .equal, toItem: self, attribute: .leadingMargin, multiplier: 1.0, constant: 10))
         
         
         //        let horizontalIconViewConstraint = NSLayoutConstraint.constraints(withVisualFormat: "H:|-paddingsmall-[iconView]", options: [], metrics: metric, views: viewDic)
@@ -105,7 +107,7 @@ class QuickSelectionTabCell: UICollectionViewCell {
     
     func setCell(data: QuickSelectionTab?) {
         setTitle(title: data?.title)
-        setIcon(icon: UIImage())
+        setIcon(icon: UIImage(named: (data?.iconName)!))
         setImage(image: UIImage())
     }
     
