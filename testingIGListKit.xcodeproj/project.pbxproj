@@ -21,6 +21,8 @@
 		471FEB3B1DC779C3002B1E61 /* LabelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471FEB3A1DC779C3002B1E61 /* LabelViewModel.swift */; };
 		471FEB3D1DC7843B002B1E61 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471FEB3C1DC7843B002B1E61 /* UserCell.swift */; };
 		471FEB3F1DC784F2002B1E61 /* UserViewSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471FEB3E1DC784F2002B1E61 /* UserViewSectionController.swift */; };
+		472AFC091DD9A58E0070C1A4 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472AFC081DD9A58E0070C1A4 /* CategoryModel.swift */; };
+		472AFC0B1DD9C8A60070C1A4 /* CategorySectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472AFC0A1DD9C8A60070C1A4 /* CategorySectionController.swift */; };
 		474E1E011DBCF2030075AF8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474E1E001DBCF2030075AF8C /* AppDelegate.swift */; };
 		474E1E031DBCF2030075AF8C /* LabelSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474E1E021DBCF2030075AF8C /* LabelSectionController.swift */; };
 		474E1E061DBCF2030075AF8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 474E1E041DBCF2030075AF8C /* Main.storyboard */; };
@@ -51,6 +53,8 @@
 		471FEB3A1DC779C3002B1E61 /* LabelViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelViewModel.swift; sourceTree = "<group>"; };
 		471FEB3C1DC7843B002B1E61 /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		471FEB3E1DC784F2002B1E61 /* UserViewSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewSectionController.swift; sourceTree = "<group>"; };
+		472AFC081DD9A58E0070C1A4 /* CategoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		472AFC0A1DD9C8A60070C1A4 /* CategorySectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategorySectionController.swift; sourceTree = "<group>"; };
 		474E1DFD1DBCF2030075AF8C /* testingIGListKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testingIGListKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		474E1E001DBCF2030075AF8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		474E1E021DBCF2030075AF8C /* LabelSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelSectionController.swift; sourceTree = "<group>"; };
@@ -94,6 +98,7 @@
 				471FEB381DC773B1002B1E61 /* TextViewModel.swift */,
 				471FEB3A1DC779C3002B1E61 /* LabelViewModel.swift */,
 				471D89871DD8506200CE007A /* QuickSelectionTab.swift */,
+				472AFC081DD9A58E0070C1A4 /* CategoryModel.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -143,6 +148,7 @@
 				471FEB3E1DC784F2002B1E61 /* UserViewSectionController.swift */,
 				471D898B1DD868FE00CE007A /* QSTabSectionController.swift */,
 				471D898F1DD86C6B00CE007A /* QSHorizontalSectionController.swift */,
+				472AFC0A1DD9C8A60070C1A4 /* CategorySectionController.swift */,
 			);
 			name = SectionControllers;
 			sourceTree = "<group>";
@@ -304,10 +310,12 @@
 				471FEB331DC74474002B1E61 /* TextViewCell.swift in Sources */,
 				47C608251DC4E87E00BDBA06 /* MainImageSectionController.swift in Sources */,
 				471D898A1DD8523800CE007A /* QuickSelectionTabCell.swift in Sources */,
+				472AFC0B1DD9C8A60070C1A4 /* CategorySectionController.swift in Sources */,
 				47C608281DC4EB4100BDBA06 /* ImageCell.swift in Sources */,
 				471FEB351DC74F1F002B1E61 /* TextViewSectionController.swift in Sources */,
 				471D898C1DD868FE00CE007A /* QSTabSectionController.swift in Sources */,
 				47E45AF31DC4A44500B4A881 /* User.swift in Sources */,
+				472AFC091DD9A58E0070C1A4 /* CategoryModel.swift in Sources */,
 				47E45AF11DC49DB200B4A881 /* ViewController.swift in Sources */,
 				474E1E031DBCF2030075AF8C /* LabelSectionController.swift in Sources */,
 				471FEB391DC773B1002B1E61 /* TextViewModel.swift in Sources */,

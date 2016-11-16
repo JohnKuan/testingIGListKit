@@ -14,7 +14,8 @@ class QuickSelectionTabCell: UICollectionViewCell {
     fileprivate let titleLabel: UILabel = {
         let title = UILabel()
         title.font = UIFont(name: "Avenir-Heavy", size: 14.0)
-        title.textColor = UIColor(red: 209.0/255.0, green: 0/255.0, blue: 69.0/255.0, alpha: 1.0)
+//        title.textColor = UIColor(red: 209.0/255.0, green: 0/255.0, blue: 69.0/255.0, alpha: 1.0)
+        title.textColor = UIColor.white
         title.baselineAdjustment = .alignBaselines
         title.textAlignment = .right
         title.translatesAutoresizingMaskIntoConstraints = false
